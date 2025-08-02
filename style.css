@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 255, 254);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav-brand{
+  font-family: 'Nunito';
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(247, 245, 245);
+}
+
+/*hamburger*/
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a{
+  color: rgb(250, 248, 248);
+  font-weight: 600;
+}
+
+.nav-menu li a:hover{
+  color: red;
+}
+
+.nav-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.full-width-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.tagline{
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  font-family: 'Nunito' sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+.tagline .tag{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Nunito';
+  color: rgb(8, 8, 105);
+  margin-bottom: 20px;
+}
+
+.deskripsi {
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.deskripsi p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.tagline .deskripsi{
+  margin-bottom: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#profil{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+} 
+
+.profil-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.tutwuri {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.visi-misi {
+  flex: 1;
+  min-width: 300px;
+}
+
+.visi-misi .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgb(8, 8, 105);
+}
+
+.visi-misi .deskripsi p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#kontak{
+  font-weight: bold;
+  color: rgb(8, 8, 105);
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 50px 20px;
+  background-color: #333333;
+  color: white;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-map,
+.footer-contact {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-contact {
+  margin-top: 0;
+}
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact h2{
+  color: white;
+}
+
+.footer-contact p{
+  color: white;
+}
+
+.fa-solid, .fa-envelope{
+  color: white;
+}
+
+.footer-map h2{
+  color: white;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Nunito';
+  color: rgb(8, 8, 105);
+  margin-bottom: 20px;
+}
+
+.copyrigth {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+}
+
+.fasilitas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.fasilitas-box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #bcbcc0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.fasilitas-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fasilitas-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fasilitas-box p {
+  display: inline;
+  background: linear-gradient(to right, #59595f, #efeefd); 
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.simple-footer {
+  background-color: #333333; /* abu-abu */
+  color: white; /* warna teks hitam */
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 576px){
+  .nav-content {
+    flex-direction: column;
+    min-height: 80px;
+    padding: 10px 20px;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .nav-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-brand, .hamburger {
+  line-height: 1;
+}
+
+  .nav-brand{
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .nav-menu {
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  background-color: #333333;
+  padding: 10px 0;
+}
+.nav-menu.active {
+  display: flex;
+}
+
+  .nav-menu li{
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .nav-menu li a{
+    font-size: 15px;
+  }
+
+.tagline{
+  padding: 15px;
+}
+
+.tagline .tag{
+  font-size: 20px;
+}
+
+.tagline .deskripsi{
+  font-size: 14px;
+}
+
+#profil {
+  margin-top: 40px;
+}
+
+.tutwuri {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+ .profil-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+    .visi-misi {
+    width: 100%;
+    text-align: left;
+  }
+
+  .visi-misi .deskripsi p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  footer{
+    clear: both;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-map,
+  .footer-contact {
+    width: 100%;
+  }
+
+  .fasilitas {
+    grid-template-columns: 1fr; 
+  }
+
+  /* Default: sembunyikan menu di mobile */
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+/* Footer */
+footer{
+  scroll-margin-top: 80px;
+  padding-top: 50px;
+  margin-top: 100px;
+  padding: 50px 0;
+  background-color: #333333;color: white;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f4f4f4;
+  gap: 20px;
+}
+
+.footer-map {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.footer-map, .footer-contact {
+  flex: 1 1 45%;
+}
+
+.footer-map h2, .footer-contact h2 {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
+
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #cccccc; 
+}
+/* Footer */
+
+
+/* Dropdown */
+.nav-menu .dropdown {
+  position: relative;
+}
+
+.nav-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333; 
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.nav-menu .dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.nav-menu .dropdown-menu li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* Dropdown */
+
+/* Optional: hover effect */
+.nav-menu .dropdown-menu li a:hover {
+  background-color: #444;
+}
+/* Optional: hover effect */
+
+
+}

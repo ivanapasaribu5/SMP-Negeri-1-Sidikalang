@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMP NEGERI 1 SIDIKALANG</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      min-height: calc(100vh - 60px); /* 60px adalah tinggi footer */
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer.simple-footer {
+      background-color: #333333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+    }
+    /* Tambahan untuk dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      list-style: none;
+      padding: 10px 0;
+      z-index: 999;
+      min-width: 180px;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dropdown-toggle .fa-caret-down {
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown.open .dropdown-toggle .fa-caret-down {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a {
+      padding: 8px 16px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #444;
+    }
+
+    /* Optional styling for .nav-menu.active if needed for mobile */
+    .nav-menu.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+  <nav>
+  <div class="nav-content">
+    <div class="nav-top">
+    <div class="nav-brand">SMP NEGERI 1 SIDIKALANG</div>
+    <div class="hamburger">☰</div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="web.html">HOME</a></li>
+      <li><a href="profil.html">PROFIL</a></li>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle">AKADEMIK <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="kurikulum.html">Kurikulum</a></li>
+            <li><a href="akreditasi.html">Akreditasi</a></li>
+            <li><a href="#tenaga-pendidik">Tenaga Pendidik</a></li>
+          </ul>
+        </li>
+      <li><a href="fasilitas.html">FASILITAS</a></li>
+      <li><a href="#pengumuman">PENGUMUMAN</a></li>
+        <li><a href="web.html#kontak">KONTAK</a></li>
+    </ul>
+  </div>
+</nav>
+  <section id="akademik">
+    <div class="akreditasi">
+      <div class="kurikulum">
+        <p class="title">Akreditasi</p>
+        <div class="deskripsi">
+          <p>SMP Negeri 1 Sidikalang telah meraih akreditasi A dari Badan Akreditasi Nasional (BAN-SM) dengan nilai 94/100 berdasarkan penilaian pada tahun 2021. Peringkat akreditasi ini menunjukkan bahwa sekolah tersebut telah memenuhi standar kualitas pendidikan yang tinggi dan konsisten dalam meningkatkan mutu layanan pendidikan. Dengan demikian, SMP Negeri 1 Sidikalang menjadi pilihan yang tepat bagi siswa yang mencari lingkungan pendidikan yang berkualitas.</p>
+          <img class="full-width-image" src="asset/akreditas.jpg" alt=""> </p>
+          <p>Proses akreditasi sendiri melibatkan evaluasi menyeluruh terhadap berbagai aspek sekolah, termasuk kurikulum, tenaga pendidik, fasilitas, serta manajemen sekolah. Dengan status akreditasi A, SMP Negeri 1 Sidikalang menunjukkan kemampuan untuk memberikan pendidikan yang bermutu dan sesuai dengan standar nasional. Sekolah ini juga terus berupaya meningkatkan kualitas pendidikannya melalui berbagai program dan inovasi.</p>
+          <p>Dengan status akreditasi yang unggul, SMP Negeri 1 Sidikalang siap memberikan pendidikan yang berkualitas dan mempersiapkan siswa untuk menjadi generasi penerus yang cerdas, kreatif, dan inovatif. Sekolah ini berkomitmen untuk terus meningkatkan mutu pendidikan dan memberikan pengalaman belajar yang bermakna bagi siswa, sehingga mereka dapat mencapai potensi maksimalnya dan menjadi warga negara yang bertanggung jawab dan berdaya saing tinggi di masa depan.</p>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+<footer class="simple-footer">
+  SMP Negeri 1 Sidikalang
+</footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+    const dropdownToggle = document.querySelector('.dropdown > .dropdown-toggle');
+    const dropdown = document.querySelector('.dropdown');
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

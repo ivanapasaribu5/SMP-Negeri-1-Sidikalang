@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMP NEGERI 1 SIDIKALANG</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    /* Tambahan untuk dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      list-style: none;
+      padding: 10px 0;
+      z-index: 999;
+      min-width: 180px;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dropdown-toggle .fa-caret-down {
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown.open .dropdown-toggle .fa-caret-down {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a {
+      padding: 8px 16px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #444;
+    }
+
+    /* Optional styling for .nav-menu.active if needed for mobile */
+    .nav-menu.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <div class="nav-content">
+    <div class="nav-top">
+    <div class="nav-brand">SMP NEGERI 1 SIDIKALANG</div>
+    <div class="hamburger">☰</div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="profil.html">PROFIL</a></li>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle">AKADEMIK <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="kurikulum.html">Kurikulum</a></li>
+            <li><a href="akreditasi.html">Akreditasi</a></li>
+            <li><a href="#tenaga-pendidik">Tenaga Pendidik</a></li>
+          </ul>
+        </li>
+        <li><a href="fasilitas.html">FASILITAS</a></li>
+        <li><a href="#pengumuman">PENGUMUMAN</a></li>
+        <li><a href="#kontak">KONTAK</a></li>
+    </ul>
+  </div>
+</nav>
+<img class="full-width-image" src="asset/smp 1.jpg" alt="">
+<main id="home">
+  <div class="tagline">
+    <p class="tag">Tentang SMP Negeri 1 Sidikalang</p>
+    <div class="deskripsi">
+  <p>
+    SMP Negeri 1 Sidikalang adalah salah satu sekolah menengah pertama negeri unggulan yang terletak di pusat Kota Sidikalang, Kabupaten Dairi, Provinsi Sumatera Utara. Berdiri sejak tahun 1959, sekolah ini telah menjadi bagian penting dalam mencetak generasi muda yang cerdas, berkarakter, dan siap menghadapi tantangan zaman. Seiring perkembangan pendidikan nasional, sekolah ini pernah mengalami perubahan status dan nama.
+  </p>
+
+  <p>
+    Pada masa tertentu, sekolah ini menyandang status sebagai RSBI (Rintisan Sekolah Bertaraf Internasional), di mana fokus utama diarahkan pada peningkatan standar pendidikan agar setara dengan sekolah bertaraf internasional. Saat berstatus RSBI, SMP Negeri 1 Sidikalang menekankan kualitas pembelajaran, kemampuan bahasa asing, serta penguatan kompetensi guru dan fasilitas. Namun, seiring dengan diberlakukannya kebijakan penghapusan RSBI oleh pemerintah pusat, sekolah ini kemudian resmi kembali menggunakan nama SMP Negeri 1 Sidikalang, dan hingga kini tetap mempertahankan standar mutu pendidikan yang tinggi.
+  </p>
+
+  <p>
+    Saat ini, sekolah dikenal secara resmi sebagai UPT SMP Negeri 1 Sidikalang di bawah naungan Dinas Pendidikan Kabupaten Dairi. Dengan akreditasi A, fasilitas belajar yang memadai, serta didukung oleh tenaga pendidik profesional dan berdedikasi, SMP Negeri 1 Sidikalang terus berkomitmen untuk menciptakan lingkungan belajar yang kondusif, inklusif, dan berprestasi. Para siswa secara aktif mengikuti berbagai kegiatan akademik maupun non-akademik, dan telah menorehkan prestasi mulai dari tingkat kabupaten hingga nasional.
+  </p>
+    </div>
+  </div>
+</main>
+<footer id="kontak">
+  <div class="footer-wrapper">
+      <div class="footer-map">
+        <h2>Lokasi</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.2340658029675!2d98.3099344757179!3d2.7468631554922753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303037fe95a99c3b%3A0x89d2a9f7f2516482!2sSMP%20Negeri%201%20Sidikalang!5e0!3m2!1sid!2sid!4v1754032279296!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+      </div>
+      <div class="footer-contact">
+        <h2>Kontak Kami</h2>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:smpnegeri01sidikalang@gmail.com">smpnegeri01sidikalang@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:062721230">062721230</a></p>
+        <p><i class="fa-solid fa-location-pin"></i> Jl. Ki Hajar Dewantara No 14, Kota Sidikalang, Kec. Sidikalang, Kab. Dairi, Prov. Sumatera Utara</p>
+        <div class="social">
+          <a href="https://www.facebook.com/share/1B9rsX7e5i/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>SMP Negeri 1 Sidikalang</a><br>
+          </a>
+          <a href="https://youtube.com/@smpnegeri1sidikalang?si=tAjf77gjuycJK7Py" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>SMP Negeri 1 Sidikalang</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyrigth">
+      <p>&copy; Copyright by <span>SMP Negeri 1 Sidikalang</span></p>
+    </div>
+</footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  const dropdownToggle = document.querySelector('.dropdown > .dropdown-toggle');
+    const dropdown = document.querySelector('.dropdown');
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle('open');
+    });
+  </script>
+  </body>
+  </html>
